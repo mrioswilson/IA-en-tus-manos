@@ -46,7 +46,7 @@
    if(index===3)embeddingTarget=target;
    lastSlide=index;
    sections.forEach((el,i)=>{el.classList.toggle('active',i===index);el.setAttribute('aria-hidden',i===index?'false':'true');el.inert=i!==index;});
-   const el=sections[index];el.dataset.step=String(step);
+   const el=sections[index];el.querySelector('.slide-footer').append(document.getElementById('toast'));el.dataset.step=String(step);
    for(let n=1;n<=data[index].steps;n++)el.classList.toggle(`b${n}`,step>=n);
    el.querySelectorAll('[data-reveal]').forEach(e=>{const shown=step>=Number(e.dataset.reveal);e.classList.toggle('is-visible',shown);e.setAttribute('aria-hidden',shown?'false':'true');});
    if(index===6){el.querySelector('.context-value').textContent=step>=6?'El gato duerme sobre la cama.':step>=5?'El gato duerme sobre':step>=4?'El gato duerme':'El gato';el.querySelector('.selected-value').textContent=step>=6?'la cama.':step>=5?'sobre':'duerme';}
