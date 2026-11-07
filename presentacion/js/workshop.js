@@ -1,1 +1,1 @@
-window.Workshop = {url: null};
+window.Workshop = {"url": "https://mrioswilson.github.io/IA-en-tus-manos/"};

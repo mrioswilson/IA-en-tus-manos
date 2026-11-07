@@ -2,6 +2,7 @@
   "presentation_files": [
     "COMO_PRESENTAR.md",
     "FUENTES_Y_CREDITOS.md",
+    "GUIA_DESCARGA.md",
     "GUIA_DESCARGA.pdf",
     "GUIA_FACILITADORES.md",
     "GUIA_FACILITADORES.pdf",
@@ -19,6 +20,8 @@
     "assets/TallerSans-700.ttf",
     "assets/TallerSans-800.ttf",
     "assets/icon.svg",
+    "assets/qr-taller.png",
+    "assets/qr-taller.svg",
     "css/presentation.css",
     "css/printables.css",
     "imprimibles.html",
