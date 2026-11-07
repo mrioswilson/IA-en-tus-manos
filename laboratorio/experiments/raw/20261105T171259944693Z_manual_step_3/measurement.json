@@ -1,0 +1,111 @@
+{
+  "label": "manual_step_3",
+  "model": "qwen3.5:2b-q4_K_M",
+  "temperature": 1,
+  "seed": 42,
+  "recorded_at": "2026-11-05T17:12:59.944858+00:00",
+  "platform": "Linux CPU; not Windows",
+  "elapsed_s": 1.6803735690191388,
+  "response": " Pedro. Pedro era un dragón...\nEsde este quinto, Héctor Trae, que es de lucro,",
+  "logprobs_type": "list",
+  "load_duration_s": 0.00042969,
+  "eval_count": 24,
+  "eval_duration_s": 1.4776,
+  "first": {
+    "token": " Pedro",
+    "logprob": -6.8966875076293945,
+    "bytes": [
+      32,
+      80,
+      101,
+      100,
+      114,
+      111
+    ],
+    "top_logprobs": [
+      {
+        "token": " \"",
+        "logprob": -2.797250986099243,
+        "bytes": [
+          32,
+          34
+        ]
+      },
+      {
+        "token": "...",
+        "logprob": -3.2396652698516846,
+        "bytes": [
+          46,
+          46,
+          46
+        ]
+      },
+      {
+        "token": " el",
+        "logprob": -3.3528215885162354,
+        "bytes": [
+          32,
+          101,
+          108
+        ]
+      },
+      {
+        "token": "\n",
+        "logprob": -3.4764931201934814,
+        "bytes": [
+          10
+        ]
+      },
+      {
+        "token": " El",
+        "logprob": -4.100627422332764,
+        "bytes": [
+          32,
+          69,
+          108
+        ]
+      },
+      {
+        "token": " P",
+        "logprob": -4.173966884613037,
+        "bytes": [
+          32,
+          80
+        ]
+      },
+      {
+        "token": " G",
+        "logprob": -4.240027904510498,
+        "bytes": [
+          32,
+          71
+        ]
+      },
+      {
+        "token": " Z",
+        "logprob": -4.263064861297607,
+        "bytes": [
+          32,
+          90
+        ]
+      },
+      {
+        "token": " T",
+        "logprob": -4.385552883148193,
+        "bytes": [
+          32,
+          84
+        ]
+      },
+      {
+        "token": " M",
+        "logprob": -4.547292232513428,
+        "bytes": [
+          32,
+          77
+        ]
+      }
+    ]
+  },
+  "top_mass": 0.2495471021443044
+}

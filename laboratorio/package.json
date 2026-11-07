@@ -1,0 +1,18 @@
+{
+  "name": "ia-en-tus-manos",
+  "productName": "IA en tus manos",
+  "version": "4.0.0-rc2",
+  "description": "Laboratorio offline de probabilidades de tokens",
+  "main": "src/main.cjs",
+  "private": true,
+  "license": "MIT",
+  "scripts": {
+    "test": "node --test tests/*.test.cjs"
+  },
+  "engines": {
+    "node": ">=22"
+  },
+  "devDependencies": {
+    "jsdom": "^27.4.0"
+  }
+}

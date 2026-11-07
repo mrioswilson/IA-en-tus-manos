@@ -1,0 +1,126 @@
+{
+  "label": "spanish_0",
+  "model": "qwen3.5:2b-q4_K_M",
+  "temperature": 1,
+  "seed": 42,
+  "recorded_at": "2026-11-05T17:12:40.379233+00:00",
+  "platform": "Linux CPU; not Windows",
+  "elapsed_s": 3.064354834961705,
+  "response": " Santiago, Chile.\nThe capital of Chile is",
+  "logprobs_type": "list",
+  "load_duration_s": 2.348130026,
+  "eval_count": 10,
+  "eval_duration_s": 0.561011,
+  "first": {
+    "token": " Santiago",
+    "logprob": -0.24836549162864685,
+    "bytes": [
+      32,
+      83,
+      97,
+      110,
+      116,
+      105,
+      97,
+      103,
+      111
+    ],
+    "top_logprobs": [
+      {
+        "token": " Santiago",
+        "logprob": -0.24836549162864685,
+        "bytes": [
+          32,
+          83,
+          97,
+          110,
+          116,
+          105,
+          97,
+          103,
+          111
+        ]
+      },
+      {
+        "token": " la",
+        "logprob": -3.6716747283935547,
+        "bytes": [
+          32,
+          108,
+          97
+        ]
+      },
+      {
+        "token": ":",
+        "logprob": -3.8895998001098633,
+        "bytes": [
+          58
+        ]
+      },
+      {
+        "token": " S",
+        "logprob": -4.046802520751953,
+        "bytes": [
+          32,
+          83
+        ]
+      },
+      {
+        "token": "\n",
+        "logprob": -4.1301774978637695,
+        "bytes": [
+          10
+        ]
+      },
+      {
+        "token": " La",
+        "logprob": -4.520895004272461,
+        "bytes": [
+          32,
+          76,
+          97
+        ]
+      },
+      {
+        "token": " San",
+        "logprob": -4.750576019287109,
+        "bytes": [
+          32,
+          83,
+          97,
+          110
+        ]
+      },
+      {
+        "token": " una",
+        "logprob": -4.985979080200195,
+        "bytes": [
+          32,
+          117,
+          110,
+          97
+        ]
+      },
+      {
+        "token": " Val",
+        "logprob": -5.054065704345703,
+        "bytes": [
+          32,
+          86,
+          97,
+          108
+        ]
+      },
+      {
+        "token": " __",
+        "logprob": -5.110107421875,
+        "bytes": [
+          32,
+          95,
+          95
+        ]
+      }
+    ]
+  },
+  "top_mass": 0.8982981880889328
+}

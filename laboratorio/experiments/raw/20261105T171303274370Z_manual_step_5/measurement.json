@@ -1,0 +1,119 @@
+{
+  "label": "manual_step_5",
+  "model": "qwen3.5:2b-q4_K_M",
+  "temperature": 1,
+  "seed": 42,
+  "recorded_at": "2026-11-05T17:13:03.274483+00:00",
+  "platform": "Linux CPU; not Windows",
+  "elapsed_s": 1.1525334580801427,
+  "response": " Viejo Dragón\", y salía a comer. Su faj\n",
+  "logprobs_type": "list",
+  "load_duration_s": 0.000478923,
+  "eval_count": 15,
+  "eval_duration_s": 0.874091,
+  "first": {
+    "token": " Vie",
+    "logprob": -6.6438984870910645,
+    "bytes": [
+      32,
+      86,
+      105,
+      101
+    ],
+    "top_logprobs": [
+      {
+        "token": " Drag",
+        "logprob": -2.5325891971588135,
+        "bytes": [
+          32,
+          68,
+          114,
+          97,
+          103
+        ]
+      },
+      {
+        "token": " L",
+        "logprob": -3.5179951190948486,
+        "bytes": [
+          32,
+          76
+        ]
+      },
+      {
+        "token": " Gran",
+        "logprob": -3.6902458667755127,
+        "bytes": [
+          32,
+          71,
+          114,
+          97,
+          110
+        ]
+      },
+      {
+        "token": " C",
+        "logprob": -3.8235056400299072,
+        "bytes": [
+          32,
+          67
+        ]
+      },
+      {
+        "token": " Gig",
+        "logprob": -3.8806612491607666,
+        "bytes": [
+          32,
+          71,
+          105,
+          103
+        ]
+      },
+      {
+        "token": " V",
+        "logprob": -3.898534059524536,
+        "bytes": [
+          32,
+          86
+        ]
+      },
+      {
+        "token": " G",
+        "logprob": -4.0589518547058105,
+        "bytes": [
+          32,
+          71
+        ]
+      },
+      {
+        "token": " Sol",
+        "logprob": -4.0797014236450195,
+        "bytes": [
+          32,
+          83,
+          111,
+          108
+        ]
+      },
+      {
+        "token": " M",
+        "logprob": -4.212108135223389,
+        "bytes": [
+          32,
+          77
+        ]
+      },
+      {
+        "token": " Rey",
+        "logprob": -4.331860065460205,
+        "bytes": [
+          32,
+          82,
+          101,
+          121
+        ]
+      }
+    ]
+  },
+  "top_mass": 0.2589753842658886
+}

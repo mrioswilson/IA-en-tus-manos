@@ -1,0 +1,113 @@
+{
+  "label": "manual_step_6",
+  "model": "qwen3.5:2b-q4_K_M",
+  "temperature": 1,
+  "seed": 42,
+  "recorded_at": "2026-11-05T17:13:04.427745+00:00",
+  "platform": "Linux CPU; not Windows",
+  "elapsed_s": 1.6967812300426885,
+  "response": "ón de las Sombras\" y era un enorme tiburón, decía que era, \"El Dragón más grande",
+  "logprobs_type": "list",
+  "load_duration_s": 0.001481055,
+  "eval_count": 24,
+  "eval_duration_s": 1.472718,
+  "first": {
+    "token": "ón",
+    "logprob": -0.006353551987558603,
+    "bytes": [
+      195,
+      179,
+      110
+    ],
+    "top_logprobs": [
+      {
+        "token": "ón",
+        "logprob": -0.006353551987558603,
+        "bytes": [
+          195,
+          179,
+          110
+        ]
+      },
+      {
+        "token": "one",
+        "logprob": -6.925437927246094,
+        "bytes": [
+          111,
+          110,
+          101
+        ]
+      },
+      {
+        "token": "ones",
+        "logprob": -6.978729248046875,
+        "bytes": [
+          111,
+          110,
+          101,
+          115
+        ]
+      },
+      {
+        "token": "ó",
+        "logprob": -7.527609825134277,
+        "bytes": [
+          195,
+          179
+        ]
+      },
+      {
+        "token": "al",
+        "logprob": -7.69355583190918,
+        "bytes": [
+          97,
+          108
+        ]
+      },
+      {
+        "token": "on",
+        "logprob": -7.764009475708008,
+        "bytes": [
+          111,
+          110
+        ]
+      },
+      {
+        "token": "án",
+        "logprob": -7.975608825683594,
+        "bytes": [
+          195,
+          161,
+          110
+        ]
+      },
+      {
+        "token": "onc",
+        "logprob": -8.240778923034668,
+        "bytes": [
+          111,
+          110,
+          99
+        ]
+      },
+      {
+        "token": "ol",
+        "logprob": -8.32463264465332,
+        "bytes": [
+          111,
+          108
+        ]
+      },
+      {
+        "token": "ún",
+        "logprob": -8.841635704040527,
+        "bytes": [
+          195,
+          186,
+          110
+        ]
+      }
+    ]
+  },
+  "top_mass": 0.9979935559610554
+}

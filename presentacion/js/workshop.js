@@ -1,0 +1,1 @@
+window.Workshop = {url: null};

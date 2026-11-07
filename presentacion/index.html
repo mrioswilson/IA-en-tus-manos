@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="es-CL">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="La IA en tus manos: dentro de la caja negra. Presentación interactiva offline, Universidad Adolfo Ibáñez, 7 de noviembre de 2026.">
+  <title>La IA en tus manos · Dentro de la caja negra</title>
+  <link rel="icon" href="assets/icon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="css/presentation.css">
+</head>
+<body>
+  <main id="stage" aria-label="Presentación: La IA en tus manos"></main>
+  <div id="live" class="sr-only" aria-live="polite"></div>
+  <nav id="toolbar" aria-label="Controles de presentación">
+    <button id="prev" aria-label="Paso anterior" title="Anterior (←)">←</button>
+    <span id="position">01 / 18</span>
+    <span id="steps" aria-label="Pasos de esta lámina"></span>
+    <button id="next" aria-label="Paso siguiente" title="Siguiente (→ o espacio)">→</button>
+    <span class="toolbar-divider"></span>
+    <button id="overview-button" title="Mapa de láminas (G)" aria-label="Mapa de láminas">▦</button>
+    <button id="help-button" title="Ayuda (H)" aria-label="Ayuda">?</button>
+  </nav>
+  <div id="toast" role="status"></div>
+  <dialog id="help" aria-labelledby="help-title">
+    <button class="close" data-close aria-label="Cerrar ayuda">×</button>
+    <p class="eyebrow">EN TUS MANOS</p><h2 id="help-title">Tú marcas el ritmo.</h2>
+    <dl class="keys">
+      <dt>→ / espacio</dt><dd>Siguiente paso o lámina</dd>
+      <dt>←</dt><dd>Retroceder un paso</dd>
+      <dt>R</dt><dd>Repetir la lámina desde el inicio</dd>
+      <dt>G</dt><dd>Ir a cualquier lámina</dd>
+      <dt>N</dt><dd>Ver notas del presentador</dd>
+      <dt>F</dt><dd>Pantalla completa</dd>
+      <dt>M</dt><dd>Reducir / restaurar movimiento</dd>
+      <dt>Inicio / Fin</dt><dd>Primera lámina / cierre</dd>
+      <dt>Esc</dt><dd>Cerrar paneles / salir de pantalla completa</dd>
+    </dl>
+    <p>En la lámina 8: mueve el deslizador; con el control enfocado, usa las flechas para ajustar y Tab para salir.</p>
+    <p class="muted">Acceso rápido: G → 11 después de Joaquín · G → 12 descarga · G → 17 historia · G → 18 cierre.</p>
+  </dialog>
+  <dialog id="overview" aria-labelledby="overview-title">
+    <button class="close" data-close aria-label="Cerrar mapa">×</button>
+    <p class="eyebrow">EL RECORRIDO</p><h2 id="overview-title">Dentro de la caja negra</h2>
+    <div id="slide-map"></div>
+  </dialog>
+  <dialog id="notes" aria-labelledby="notes-title">
+    <button class="close" data-close aria-label="Cerrar notas">×</button>
+    <p class="eyebrow">NOTAS DEL PRESENTADOR · VISIBLES EN LA PROYECCIÓN</p>
+    <h2 id="notes-title"></h2><div id="note-content"></div>
+    <p class="muted">Guion completo: GUION_PRESENTADOR.md. Cierra con N o Esc.</p>
+  </dialog>
+  <noscript>Esta presentación requiere JavaScript. Puedes abrir PRESENTACION_RESPALDO.pdf para presentar sin animaciones.</noscript>
+  <script src="js/visuals.js"></script>
+  <script src="js/workshop.js"></script>
+  <script src="js/slides.js"></script>
+  <script src="js/presentation.js"></script>
+</body>
+</html>

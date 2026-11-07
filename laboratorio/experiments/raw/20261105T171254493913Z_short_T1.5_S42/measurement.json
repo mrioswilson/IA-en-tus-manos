@@ -1,0 +1,152 @@
+{
+  "label": "short_T1.5_S42",
+  "model": "qwen3.5:2b-q4_K_M",
+  "temperature": 1.5,
+  "seed": 42,
+  "recorded_at": "2026-11-05T17:12:54.494029+00:00",
+  "platform": "Linux CPU; not Windows",
+  "elapsed_s": 0.7072902219370008,
+  "response": " caja con ________()\\\n\n la mpl una mayencial",
+  "logprobs_type": "list",
+  "load_duration_s": 0.000385235,
+  "eval_count": 10,
+  "eval_duration_s": 0.575726,
+  "first": {
+    "token": " caja",
+    "logprob": -5.293057918548584,
+    "bytes": [
+      32,
+      99,
+      97,
+      106,
+      97
+    ],
+    "top_logprobs": [
+      {
+        "token": " mesa",
+        "logprob": -0.9350152611732483,
+        "bytes": [
+          32,
+          109,
+          101,
+          115,
+          97
+        ]
+      },
+      {
+        "token": " cama",
+        "logprob": -1.6779932975769043,
+        "bytes": [
+          32,
+          99,
+          97,
+          109,
+          97
+        ]
+      },
+      {
+        "token": " alf",
+        "logprob": -2.932894229888916,
+        "bytes": [
+          32,
+          97,
+          108,
+          102
+        ]
+      },
+      {
+        "token": " silla",
+        "logprob": -3.377872943878174,
+        "bytes": [
+          32,
+          115,
+          105,
+          108,
+          108,
+          97
+        ]
+      },
+      {
+        "token": " cabeza",
+        "logprob": -3.4898171424865723,
+        "bytes": [
+          32,
+          99,
+          97,
+          98,
+          101,
+          122,
+          97
+        ]
+      },
+      {
+        "token": " espalda",
+        "logprob": -3.771028995513916,
+        "bytes": [
+          32,
+          101,
+          115,
+          112,
+          97,
+          108,
+          100,
+          97
+        ]
+      },
+      {
+        "token": " pared",
+        "logprob": -4.269124507904053,
+        "bytes": [
+          32,
+          112,
+          97,
+          114,
+          101,
+          100
+        ]
+      },
+      {
+        "token": " ventana",
+        "logprob": -4.524446964263916,
+        "bytes": [
+          32,
+          118,
+          101,
+          110,
+          116,
+          97,
+          110,
+          97
+        ]
+      },
+      {
+        "token": " alm",
+        "logprob": -4.557072162628174,
+        "bytes": [
+          32,
+          97,
+          108,
+          109
+        ]
+      },
+      {
+        "token": " superficie",
+        "logprob": -5.161909580230713,
+        "bytes": [
+          32,
+          115,
+          117,
+          112,
+          101,
+          114,
+          102,
+          105,
+          99,
+          105,
+          101
+        ]
+      }
+    ]
+  },
+  "top_mass": 0.7612839173237037
+}

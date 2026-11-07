@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#132c35">
+  <title>IA en tus manos · Dentro de la caja negra</title>
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="/style.css"><script src="/app.js" defer></script>
+</head>
+<body>
+<header class="topbar">
+  <a class="brand" href="/" aria-label="IA en tus manos, inicio"><svg width="42" height="44" viewBox="0 0 42 44" aria-hidden="true"><path d="M21 2 40 12 21 22 2 12Z" fill="#f4ba57"/><path d="m2 17 17 9v16L2 33Z" fill="#89c6b3"/><path d="m23 26 17-9v16l-17 9Z" fill="#e6856d"/></svg><span>IA en tus manos<small>DENTRO DE LA CAJA NEGRA</small></span></a>
+  <div class="source-control"><label for="source">Datos</label><select id="source"><option value="live">En vivo · IA incluida</option><option value="prepared">Preparados · reales y guardados</option></select><span id="connection" class="connection">Comprobando la IA incluida…</span><button id="refresh" class="icon-button" title="Comprobar conexión" aria-label="Comprobar conexión">↻</button></div>
+  <div class="top-actions"><button id="reset" class="reset">Reiniciar ↻</button></div>
+</header>
+<main>
+  <nav class="experiences" aria-label="Elige una experiencia">
+    <button data-mode="predict" class="active" aria-current="page"><span class="number">01</span><span>Adivina<small>El siguiente token</small></span><span class="tab-symbol">?</span></button>
+    <button data-mode="context"><span class="number">02</span><span>Cambia una palabra<small>El poder del contexto</small></span><span class="tab-symbol">↔</span></button>
+    <button data-mode="temperature"><span class="number">03</span><span>Controla la imaginación<small>Prueba la temperatura</small></span><span class="tab-symbol">✳</span></button>
+    <button data-mode="story"><span class="number">04</span><span>Tú eres la IA<small>Una historia, token a token</small></span><span class="tab-symbol">✎</span></button>
+    <button data-mode="bet"><span class="number">05</span><span>Apuesta<small>Confirma y comprueba</small></span><span class="tab-symbol">★</span></button>
+  </nav>
+  <div id="prepared-banner" class="banner prepared" hidden><strong>RESULTADOS PREPARADOS</strong> · Son consultas reales guardadas el 5 de noviembre de 2026. No hay inferencia en vivo. Usa los ejemplos disponibles; la historia sigue un recorrido guardado.</div>
+  <div id="environment-banner" class="banner" hidden></div><button id="retry-engine" class="secondary" hidden>Reintentar motor</button>
+  <section class="intro"><div><p class="eyebrow" id="mode-kicker">ABRE LA CAJA · EXPERIMENTO 01</p><h1 id="mode-title">¿Qué viene después?</h1><p id="mode-subtitle">Haz una apuesta. Después mira las posibilidades que calcula la IA.</p></div><ol class="cycle" aria-label="Ciclo del experimento"><li class="current">Predice</li><li>Consulta</li><li>Observa</li><li>Experimenta</li><li>Explica</li></ol></section>
+  <div id="status" class="status" role="status" aria-live="polite">Elige una frase y haz una predicción.</div>
+
+  <section id="predict-panel" class="mode-panel" aria-labelledby="mode-title">
+    <div class="split">
+      <div class="card experiment-input"><div class="card-heading"><span class="pill">TU DESAFÍO</span><span class="tiny">1 token · temperatura 1</span></div>
+        <label for="predict-example">Empieza con una idea</label><select id="predict-example" class="examples"></select>
+        <label for="predict-prompt">El texto hasta ahora</label><textarea id="predict-prompt" maxlength="1200" rows="3" spellcheck="false">El gato duerme sobre la</textarea>
+        <label for="prediction">¿Qué token escogerá la IA? <span class="optional">Tu apuesta es opcional</span></label><input id="prediction" maxlength="80" placeholder="Yo creo que seguirá con…" autocomplete="off">
+        <button id="predict-go" class="primary" data-query>Descubrir posibilidades <span>→</span></button>
+        <p class="input-tip">Prueba a cambiar una palabra o un espacio al final. También forman parte del contexto.</p>
+      </div>
+      <div class="card result-card"><div class="card-heading"><h2>El siguiente token</h2><div class="count-control"><label for="top-count">Mostrar</label><select id="top-count"><option value="5">5</option><option value="10" selected>10</option></select></div></div><div id="predict-result" class="result"></div></div>
+    </div>
+    <aside class="takeaway"><span>↳</span><p><strong>Una frase, muchas posibilidades.</strong> El modelo selecciona un token y vuelve a calcular con el texto nuevo. Un token puede ser una palabra, un fragmento, un espacio o un signo.</p></aside>
+  </section>
+
+  <section id="context-panel" class="mode-panel" hidden>
+    <p class="context-explanation">La misma IA leerá dos frases diferentes. ¿Crees que predecirá lo mismo en ambas?</p>
+    <div class="context-inputs"><div class="card"><label for="context-a"><span class="letter">A</span> Frase A</label><textarea id="context-a" rows="2" maxlength="1200" spellcheck="false">El científico descubrió una</textarea></div><div class="context-bridge" aria-hidden="true">↔</div><div class="card"><label for="context-b"><span class="letter coral">B</span> Frase B · cambia una palabra</label><textarea id="context-b" rows="2" maxlength="1200" spellcheck="false">El pirata descubrió una</textarea></div></div>
+    <div class="context-action"><p><strong>Antes de consultar:</strong> di qué crees que seguirá en cada frase. Después compara las predicciones de la IA.</p><button id="context-go" class="primary" data-query>Comparar las dos frases →</button></div>
+    <div id="context-results" class="split equal" hidden><div class="card result-card"><h2>Predicciones para la frase A</h2><p id="context-phrase-a" class="context-phrase"></p><div id="context-result-a" class="result"></div></div><div class="card result-card"><h2>Predicciones para la frase B</h2><p id="context-phrase-b" class="context-phrase"></p><div id="context-result-b" class="result"></div></div></div>
+    <p id="context-observation" class="observation" role="status" aria-live="polite">Escribe las dos frases, haz tus predicciones y pulsa «Comparar las dos frases».</p>
+    <aside class="takeaway"><span>↳</span><p><strong>El contexto importa.</strong> Los porcentajes dependen del texto completo. «Fuera del top 10» significa que no conocemos ese valor, no que sea cero.</p></aside>
+  </section>
+
+  <section id="temperature-panel" class="mode-panel" hidden>
+    <div class="split"><div class="card experiment-input"><div class="card-heading"><span class="pill coral-bg">EXPERIMENTA</span><span class="tiny">Mismo texto · otras selecciones</span></div>
+      <label for="temperature-prompt">El texto hasta ahora</label><textarea id="temperature-prompt" maxlength="1200" rows="2" spellcheck="false">El gato duerme sobre la</textarea>
+      <div class="temperature-title"><label for="temperature-slider">Temperatura</label><output id="temperature-value" for="temperature-slider">1,0</output></div><input id="temperature-slider" type="range" min="0" max="3" step="1" value="2" aria-valuetext="1,0"><div class="range-labels"><span>0</span><span>0,5</span><span>1,0</span><span>1,5</span></div><p id="temperature-description" class="input-tip">Valor de referencia para comparar.</p>
+      <button id="temperature-go" class="primary" data-query>Consultar con esta temperatura →</button><button id="temperature-samples" class="secondary" data-query>Generar 3 continuaciones cortas</button>
+      <p class="input-tip">Mantenemos el contexto y los demás controles. Las tres variantes usan las mismas semillas en cada temperatura.</p>
+    </div><div class="card result-card"><h2>Probabilidades y selección</h2><div id="temperature-result" class="result"></div></div></div>
+    <div class="science-note"><strong>Dos distribuciones, claramente identificadas.</strong> Las barras superiores muestran las probabilidades originales (T=1); las inferiores, las probabilidades reales después de aplicar temperatura. El motor calcula ambas sobre todo el vocabulario: <strong>no normalizamos el top 10</strong>. En Preparados se muestran solo las probabilidades base que guardó Ollama; ese respaldo no contiene la distribución ajustada.</div>
+    <div id="samples" class="samples" aria-live="polite"></div>
+    <aside class="takeaway"><span>↳</span><p><strong>Observa, no adivines la regla.</strong> Temperatura 0 elige el token de mayor puntuación. Una temperatura mayor cambia la selección aleatoria; tres ejemplos no bastan para medir su distribución ni para decir cuál es mejor.</p></aside>
+  </section>
+
+  <section id="story-panel" class="mode-panel" hidden>
+    <div class="split story-split"><div class="card story-card"><div class="card-heading"><span class="pill">TU HISTORIA</span><span id="story-progress" class="tiny">0 de 8 decisiones</span></div>
+      <div id="story-start-area"><label for="story-start">Escribe el comienzo de tu historia</label><textarea id="story-start" maxlength="700" rows="3" spellcheck="false">Había una vez un dragón que</textarea><button id="story-go" class="primary" data-query>Abrir las posibilidades →</button></div>
+      <div id="story-text" class="story-text" aria-label="Historia construida" hidden></div>
+      <div class="story-legend"><span><i class="human-dot"></i> Elección humana</span><span><i class="ai-dot"></i> Continuación de IA</span></div>
+      <div class="story-actions"><button id="story-undo" disabled>↶ Deshacer</button><button id="story-restart">Reiniciar historia</button><button id="story-save">Guardar historia ↓</button></div><button id="story-retry" class="secondary" data-query hidden>Consultar el siguiente token</button><button id="story-auto" class="secondary" data-query>La IA continúa · hasta 24 tokens</button>
+      <h3>Tus decisiones</h3><ol id="story-history" class="history"></ol><p id="story-mission" class="input-tip">Elige tokens sucesivamente. Después de ocho decisiones, prueba la continuación automática.</p>
+    </div><div class="card result-card"><div class="card-heading"><h2>Ahora eliges tú</h2><span class="tiny">Toca una alternativa</span></div><div id="story-result" class="result"></div><p class="input-tip">Añadimos el texto exacto del token elegido y consultamos otra vez. Volver a tokenizar el texto puede cambiar los identificadores internos.</p></div></div>
+    <aside class="takeaway"><span>↳</span><p><strong>¿Elegirías lo más probable?</strong> El token seleccionado por el motor es solo una posibilidad. Puedes tomar otro camino. En el respaldo solo están habilitados los pasos cuyo siguiente contexto fue guardado.</p></aside>
+  </section>
+
+  <section id="bet-panel" class="mode-panel" hidden>
+    <div class="split"><div class="card experiment-input">
+      <div class="card-heading"><span class="pill">APUESTA DE TOKENS</span><span class="tiny">1 acierto = 1 punto</span></div>
+      <p class="input-tip">Escribe tu apuesta antes de consultar. Jugamos con puntos, sin dinero. Mayúsculas, tildes y espacios cuentan.</p>
+      <label for="bet-prompt">El texto hasta ahora</label><textarea id="bet-prompt" maxlength="1200" rows="3" spellcheck="false">El gato duerme sobre la</textarea>
+      <label for="bet-token">¿Cuál será el siguiente token?</label><input id="bet-token" maxlength="80" placeholder="Por ejemplo: mesa" autocomplete="off" spellcheck="false" aria-describedby="bet-token-help bet-preview">
+      <label class="bet-space"><input id="bet-space" type="checkbox" checked> Anteponer un espacio al token</label>
+      <p id="bet-token-help" class="input-tip">Un token puede ser solo un fragmento de palabra. · muestra un espacio. Mira la escritura exacta antes de confirmar.</p>
+      <output id="bet-preview" class="bet-preview" for="bet-token bet-space" aria-live="polite"></output>
+      <label for="bet-temperature">Temperatura de esta ronda</label><select id="bet-temperature"><option value="0">0 · el máximo</option><option value="0.5">0,5</option><option value="1" selected>1</option><option value="1.5">1,5</option></select>
+      <button id="bet-go" class="primary" data-query>Confirmar apuesta y generar 1 token →</button>
+      <button id="bet-next" class="secondary">Nueva ronda</button>
+      <p id="bet-source-note" class="input-tip"></p>
+    </div><div class="card result-card">
+      <div class="card-heading"><h2>Tu marcador</h2><strong id="bet-score" class="pill">0 puntos · 0 rondas</strong></div>
+      <div id="bet-outcome" class="bet-outcome" role="status" aria-live="polite"></div>
+      <div id="bet-result" class="result"></div>
+      <h3>Últimas rondas</h3><ol id="bet-history" class="bet-history"></ol>
+    </div></div>
+    <aside class="takeaway"><span>↳</span><p><strong>Lo más probable no siempre sale.</strong> Cada ronda usa una semilla nueva. A temperatura 0 el modelo elige el máximo. Cambia el contexto o la temperatura y observa. Guarda el experimento antes de usar Reiniciar o cerrar.</p></aside>
+  </section>
+
+  <footer><div><strong>Probable ≠ verdadero.</strong> Estas probabilidades describen cómo continúa el modelo; no verifican hechos. <small>Ensayo v4.0.0-rc2</small></div><div class="footer-actions"><label for="model">Modelo</label><select id="model"><option value="qwen3.5:2b-q4_K_M">Qwen 3.5 · 2B (recomendado)</option></select><button id="export">Guardar experimento ↓</button><a href="/cards.html" target="_blank" rel="noopener">Tarjetas</a><a href="/guide.html" target="_blank" rel="noopener">Guía</a></div></footer>
+  <details class="audit"><summary>Abre un poco más la caja: cómo leer los datos</summary><p>· = espacio; ↵ = salto de línea; ⇥ = tabulación. Se muestra el texto original en la ficha de cada token. Un porcentaje es la probabilidad nativa × 100. En vivo, la distribución original se obtiene del muestreador a T=1 sin filtros; la ajustada usa la temperatura elegida. El respaldo conserva exp(logprob) de Ollama. Las barras usan una escala absoluta de 0 a 100 %. No redistribuimos la masa de los tokens que faltan. «Otras posibilidades» incluye todo lo que queda fuera de las barras visibles.</p><p>En vivo se conservan los IDs y bytes que informa llama.cpp. Las grabaciones anteriores conservan los bytes informados por Ollama. El texto se vuelve a tokenizar después de cada elección manual. Los tokens especiales o con UTF-8 incompleto se muestran, pero no se añaden manualmente. Una semilla fija facilita repetir una consulta en el mismo entorno; no garantiza resultados idénticos entre versiones, hardware o estados de caché.</p><p>El archivo «Guardar experimento» conserva solicitudes, respuestas originales, hashes, IDs, bytes y decisiones. La respuesta base de todo el vocabulario se comprime sin pérdidas con gzip/base64 para auditoría. Los datos se mantienen en esta pestaña hasta guardarlos o usar «Reiniciar». El servidor no guarda sesiones.</p></details>
+</main>
+<noscript>Activa JavaScript en este navegador para usar el laboratorio local.</noscript>
+</body></html>

@@ -1,0 +1,139 @@
+{
+  "label": "manual_step_1",
+  "model": "qwen3.5:2b-q4_K_M",
+  "temperature": 1,
+  "seed": 42,
+  "recorded_at": "2026-11-05T17:12:56.662536+00:00",
+  "platform": "Linux CPU; not Windows",
+  "elapsed_s": 1.6412227218970656,
+  "response": " llamaba Rancho.\nEl nombre de Rancho significa hogar, nacido y origen, o también es un homenaje a",
+  "logprobs_type": "list",
+  "load_duration_s": 0.000718307,
+  "eval_count": 24,
+  "eval_duration_s": 1.462626,
+  "first": {
+    "token": " llam",
+    "logprob": -0.33806663751602173,
+    "bytes": [
+      32,
+      108,
+      108,
+      97,
+      109
+    ],
+    "top_logprobs": [
+      {
+        "token": " llam",
+        "logprob": -0.33806663751602173,
+        "bytes": [
+          32,
+          108,
+          108,
+          97,
+          109
+        ]
+      },
+      {
+        "token": " había",
+        "logprob": -3.7403311729431152,
+        "bytes": [
+          32,
+          104,
+          97,
+          98,
+          195,
+          173,
+          97
+        ]
+      },
+      {
+        "token": " ll",
+        "logprob": -3.8555169105529785,
+        "bytes": [
+          32,
+          108,
+          108
+        ]
+      },
+      {
+        "token": " met",
+        "logprob": -4.691392421722412,
+        "bytes": [
+          32,
+          109,
+          101,
+          116
+        ]
+      },
+      {
+        "token": " llama",
+        "logprob": -4.9188666343688965,
+        "bytes": [
+          32,
+          108,
+          108,
+          97,
+          109,
+          97
+        ]
+      },
+      {
+        "token": " llamó",
+        "logprob": -5.022679805755615,
+        "bytes": [
+          32,
+          108,
+          108,
+          97,
+          109,
+          195,
+          179
+        ]
+      },
+      {
+        "token": " sent",
+        "logprob": -5.151120662689209,
+        "bytes": [
+          32,
+          115,
+          101,
+          110,
+          116
+        ]
+      },
+      {
+        "token": " conoc",
+        "logprob": -5.416029453277588,
+        "bytes": [
+          32,
+          99,
+          111,
+          110,
+          111,
+          99
+        ]
+      },
+      {
+        "token": " cre",
+        "logprob": -5.496291637420654,
+        "bytes": [
+          32,
+          99,
+          114,
+          101
+        ]
+      },
+      {
+        "token": " iba",
+        "logprob": -5.600621700286865,
+        "bytes": [
+          32,
+          105,
+          98,
+          97
+        ]
+      }
+    ]
+  },
+  "top_mass": 0.7991600151544254
+}

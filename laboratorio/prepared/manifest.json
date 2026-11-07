@@ -1,0 +1,227 @@
+{
+  "schema_version": 1,
+  "model": "qwen3.5:2b-q4_K_M",
+  "recorded_on": "2026-11-05",
+  "platform": "Linux CPU; cgroup 4 GiB / 2 CPUs; not Windows",
+  "ollama_version": "0.40.14",
+  "prompts": [
+    "La capital de Chile es",
+    "En el cielo nocturno brillan las",
+    "El gato duerme sobre la",
+    "Una científica encontró un misterioso",
+    "Había una vez un dragón que",
+    "El científico descubrió una",
+    "El pirata descubrió una"
+  ],
+  "story_start": "Había una vez un dragón que",
+  "records": [
+    {
+      "prompt": "La capital de Chile es",
+      "temperature": 1,
+      "seed": 42,
+      "path": "experiments/raw/20261105T171240379103Z_spanish_0/response.json",
+      "sha256": "decf7ab1ac4e8223f7a56d7aefada386bb9bf18c6f4d49cbfd7d6ab760fc8599",
+      "elapsed_s": 3.064354834961705
+    },
+    {
+      "prompt": "En el cielo nocturno brillan las",
+      "temperature": 1,
+      "seed": 42,
+      "path": "experiments/raw/20261105T171243444125Z_spanish_1/response.json",
+      "sha256": "b3a7d03664188fc0f1cfaecd7f6138b0baa4a1b016fe90cc5b462f60c74394c9",
+      "elapsed_s": 0.8003536050673574
+    },
+    {
+      "prompt": "El gato duerme sobre la",
+      "temperature": 1,
+      "seed": 42,
+      "path": "experiments/raw/20261105T171244245097Z_spanish_2/response.json",
+      "sha256": "e8fdefaa937795ccca8fa929b86f5fec97f677aaf6375667cb845b25055e042b",
+      "elapsed_s": 0.7507410648977384
+    },
+    {
+      "prompt": "Una científica encontró un misterioso",
+      "temperature": 1,
+      "seed": 42,
+      "path": "experiments/raw/20261105T171244996421Z_spanish_3/response.json",
+      "sha256": "eeb22ec656e0348e6f4c35f41e68d82f8f4f8d38e1cf199eb0af6e04b63a6d0f",
+      "elapsed_s": 0.7649986969772726
+    },
+    {
+      "prompt": "Había una vez un dragón que",
+      "temperature": 1,
+      "seed": 42,
+      "path": "experiments/raw/20261105T171245762044Z_spanish_4/response.json",
+      "sha256": "664e2adc91dbb7e94e61143f0bd0d578a47c9c004a7921aa00f48ef6c42b0ff7",
+      "elapsed_s": 1.6783102659974247
+    },
+    {
+      "prompt": "El científico descubrió una",
+      "temperature": 1,
+      "seed": 42,
+      "path": "experiments/raw/20261105T171247441275Z_spanish_5/response.json",
+      "sha256": "3a11d24b66e819184167184399d1fc4dd5058bef8cf601457ba9ebed408b7c1d",
+      "elapsed_s": 0.732172966003418
+    },
+    {
+      "prompt": "El pirata descubrió una",
+      "temperature": 1,
+      "seed": 42,
+      "path": "experiments/raw/20261105T171248174080Z_spanish_6/response.json",
+      "sha256": "cb3ac6e25b868ee16f3471bc84513bda54976c54a48ec8a8aebc6798019c878b",
+      "elapsed_s": 0.7592857689596713
+    },
+    {
+      "prompt": "El gato duerme sobre la",
+      "temperature": 0,
+      "seed": 42,
+      "path": "experiments/raw/20261105T171248933977Z_short_T0_S42/response.json",
+      "sha256": "600605a570f9a77f002d1891cacf67311cc5dd7bdd511424792447da0bd37435",
+      "elapsed_s": 0.7260548709891737
+    },
+    {
+      "prompt": "El gato duerme sobre la",
+      "temperature": 0,
+      "seed": 43,
+      "path": "experiments/raw/20261105T171249660604Z_short_T0_S43/response.json",
+      "sha256": "9202d556fd4e9302b50d1af03ba630ef51fd646a0b609a8ca0ca6a1da5cc2c6d",
+      "elapsed_s": 0.6926302299834788
+    },
+    {
+      "prompt": "El gato duerme sobre la",
+      "temperature": 0,
+      "seed": 44,
+      "path": "experiments/raw/20261105T171250353789Z_short_T0_S44/response.json",
+      "sha256": "69d2e45a02ce520d9317b0f91f42065ee6894a965e854ee3db36667f549e895f",
+      "elapsed_s": 0.6716494290158153
+    },
+    {
+      "prompt": "El gato duerme sobre la",
+      "temperature": 0.5,
+      "seed": 42,
+      "path": "experiments/raw/20261105T171251026044Z_short_T0.5_S42/response.json",
+      "sha256": "072299f27b7e30ac97efcdb12bc95017e4111ab4e3e1c4b14cc2bad55e9e1a8f",
+      "elapsed_s": 0.6991753199836239
+    },
+    {
+      "prompt": "El gato duerme sobre la",
+      "temperature": 0.5,
+      "seed": 43,
+      "path": "experiments/raw/20261105T171251725778Z_short_T0.5_S43/response.json",
+      "sha256": "6fbef8975154670dae1ca38408b5fe6721e5895dd2ca9ff66650a7e30a63c714",
+      "elapsed_s": 0.6911711400607601
+    },
+    {
+      "prompt": "El gato duerme sobre la",
+      "temperature": 0.5,
+      "seed": 44,
+      "path": "experiments/raw/20261105T171252417585Z_short_T0.5_S44/response.json",
+      "sha256": "ffb14133843637ec2ad1d9d13f2772f03230d6cac4f3436553297991d8a7a46a",
+      "elapsed_s": 0.6972354250028729
+    },
+    {
+      "prompt": "El gato duerme sobre la",
+      "temperature": 1,
+      "seed": 43,
+      "path": "experiments/raw/20261105T171253115371Z_short_T1_S43/response.json",
+      "sha256": "676f2b545ef48ac9608853910f69fe481a46aca528712cd9d0047025458b41b8",
+      "elapsed_s": 0.6900230209575966
+    },
+    {
+      "prompt": "El gato duerme sobre la",
+      "temperature": 1,
+      "seed": 44,
+      "path": "experiments/raw/20261105T171253805971Z_short_T1_S44/response.json",
+      "sha256": "ccfe21b94e1aaf45e727c9f5d74e2c196870e38a035caa7e29294da76ba3a709",
+      "elapsed_s": 0.6868302059592679
+    },
+    {
+      "prompt": "El gato duerme sobre la",
+      "temperature": 1.5,
+      "seed": 42,
+      "path": "experiments/raw/20261105T171254493913Z_short_T1.5_S42/response.json",
+      "sha256": "9f5712cb8e8d151b1712cfc087b7b072cf2a5817b46ac368cee1af6d1be055fb",
+      "elapsed_s": 0.7072902219370008
+    },
+    {
+      "prompt": "El gato duerme sobre la",
+      "temperature": 1.5,
+      "seed": 43,
+      "path": "experiments/raw/20261105T171255201761Z_short_T1.5_S43/response.json",
+      "sha256": "3e25d8eeabd3ece2ac5f2c018da3c5621292c64282fc6d4218dba245f9108523",
+      "elapsed_s": 0.7501233159564435
+    },
+    {
+      "prompt": "El gato duerme sobre la",
+      "temperature": 1.5,
+      "seed": 44,
+      "path": "experiments/raw/20261105T171255952446Z_short_T1.5_S44/response.json",
+      "sha256": "2d4f95aacb94c54ad20bdc2f05844b18eef6eb7681061be2a48429b9dc29a343",
+      "elapsed_s": 0.709055860992521
+    },
+    {
+      "prompt": "Había una vez un dragón que se",
+      "temperature": 1,
+      "seed": 42,
+      "path": "experiments/raw/20261105T171256662417Z_manual_step_1/response.json",
+      "sha256": "3d968b06b288e3b9c4264b9254f129b339b33ceab3fff0ad1305275379c25786",
+      "elapsed_s": 1.6412227218970656
+    },
+    {
+      "prompt": "Había una vez un dragón que se llam",
+      "temperature": 1,
+      "seed": 42,
+      "path": "experiments/raw/20261105T171258304433Z_manual_step_2/response.json",
+      "sha256": "8aebc79c9cc603a6c87f8d427cc46fef528fe84e743b4ed5ebf817bc0729a3b3",
+      "elapsed_s": 1.6395034770248458
+    },
+    {
+      "prompt": "Había una vez un dragón que se llamaba",
+      "temperature": 1,
+      "seed": 42,
+      "path": "experiments/raw/20261105T171259944693Z_manual_step_3/response.json",
+      "sha256": "f61ba0280d1456769646750ee9b2fa8f1e9cdb4d79d9ab67c46651b8abd7a498",
+      "elapsed_s": 1.6803735690191388
+    },
+    {
+      "prompt": "Había una vez un dragón que se llamaba \"",
+      "temperature": 1,
+      "seed": 42,
+      "path": "experiments/raw/20261105T171301631336Z_manual_step_4/response.json",
+      "sha256": "90b2e077aee90284fc57097519ea2f7443c870a410f5c76520b5b7fe1a578577",
+      "elapsed_s": 1.642189848003909
+    },
+    {
+      "prompt": "Había una vez un dragón que se llamaba \"El",
+      "temperature": 1,
+      "seed": 42,
+      "path": "experiments/raw/20261105T171303274370Z_manual_step_5/response.json",
+      "sha256": "1f2fd63bc41f1de4d5c2154391e362428f3c2d47d3301b5b8fff5cebe8bc4cd0",
+      "elapsed_s": 1.1525334580801427
+    },
+    {
+      "prompt": "Había una vez un dragón que se llamaba \"El Drag",
+      "temperature": 1,
+      "seed": 42,
+      "path": "experiments/raw/20261105T171304427627Z_manual_step_6/response.json",
+      "sha256": "4b1c14448907378976ff4d077fe56c599cea287f186be14bf64ca45b6eea7581",
+      "elapsed_s": 1.6967812300426885
+    },
+    {
+      "prompt": "Había una vez un dragón que se llamaba \"El Dragón",
+      "temperature": 1,
+      "seed": 42,
+      "path": "experiments/raw/20261105T171306125140Z_manual_step_7/response.json",
+      "sha256": "4187063bed497aece66cca8363d7f9393783056d091924d03525d40b3a88c4ce",
+      "elapsed_s": 1.7138049299828708
+    },
+    {
+      "prompt": "Había una vez un dragón que se llamaba \"El Dragón de",
+      "temperature": 1,
+      "seed": 42,
+      "path": "experiments/raw/20261105T171307839678Z_manual_step_8/response.json",
+      "sha256": "272b7adb110eb07d58a68f04d680bbe921b9c7f6be54ff2d0e15b6665bc5fe78",
+      "elapsed_s": 1.735849638003856
+    }
+  ]
+}

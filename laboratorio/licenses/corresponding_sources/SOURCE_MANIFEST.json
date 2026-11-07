@@ -1,0 +1,41 @@
+{
+  "electron": "45.2.3",
+  "chromium": "156.0.8078.80",
+  "ffmpeg_base_commit": "9db86ce5b5b454dfc96c435f9f0723012980c37f",
+  "original_sources": {
+    "ffmpeg-9db86ce5-source.tar.gz": {
+      "url": "https://chromium.googlesource.com/chromium/third_party/ffmpeg/+archive/9db86ce5b5b454dfc96c435f9f0723012980c37f.tar.gz",
+      "bytes": 18927362,
+      "sha256": "45d88cd8e02dc47a0ec3b28c609161a364bd8c98500be11ec7e2eb715be3a928"
+    },
+    "electron-v45.2.3-source.tar.gz": {
+      "url": "https://codeload.github.com/electron/electron/tar.gz/refs/tags/v45.2.3",
+      "bytes": 20621869,
+      "sha256": "09130d44c776444601de7a346b7747f59e503d68af95f88577f6337f585535d2"
+    }
+  },
+  "electron_patches_applied_in_order": [
+    {
+      "file": "link_with_loader_path.patch",
+      "sha256": "e2f63a2036ffa803db9a50dfec74c4f5628abc476cb44a5ede9d7e775bc7b238"
+    },
+    {
+      "file": "cherry-pick-f4bee18dadeb.patch",
+      "sha256": "058d8da4c2c7ca0ca6a78a6b70b8f9d7f599f2b8244aadd8a14283e0988c36e6"
+    },
+    {
+      "file": "cherry-pick-5eed87f44b0a.patch",
+      "sha256": "f036e4f0c6d131ec832c3727bb0dc5da51810cedcc146c0c8128c3a89e2e4ade"
+    },
+    {
+      "file": "cherry-pick-fb424c4f78d1.patch",
+      "sha256": "37bf2d50981a61f42cb3907aa9e3e612eecb5322c6a0ca53a6c68b3415df868f"
+    }
+  ],
+  "source_archive": {
+    "file": "ffmpeg-electron-45.2.3-patched.tar.gz",
+    "bytes": 18827523,
+    "sha256": "6c290b2592b1d4288672ebbd5021dddf628c7459d18b88d3d0b047823524df2f"
+  },
+  "note": "Complete FFmpeg source at Chromium pin, with Electron release patches applied. Electron source includes build configurations and patch scripts. No changes to the runtime binaries."
+}

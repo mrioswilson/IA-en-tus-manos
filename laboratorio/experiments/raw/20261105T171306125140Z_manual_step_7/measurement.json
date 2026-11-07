@@ -1,0 +1,121 @@
+{
+  "label": "manual_step_7",
+  "model": "qwen3.5:2b-q4_K_M",
+  "temperature": 1,
+  "seed": 42,
+  "recorded_at": "2026-11-05T17:13:06.125254+00:00",
+  "platform": "Linux CPU; not Windows",
+  "elapsed_s": 1.7138049299828708,
+  "response": " Rojo\". Este dragón era tan volador, tan poderoso, además de tan tefrenz, aunque no",
+  "logprobs_type": "list",
+  "load_duration_s": 0.001075157,
+  "eval_count": 24,
+  "eval_duration_s": 1.483524,
+  "first": {
+    "token": " Ro",
+    "logprob": -3.553358554840088,
+    "bytes": [
+      32,
+      82,
+      111
+    ],
+    "top_logprobs": [
+      {
+        "token": " de",
+        "logprob": -1.1927293539047241,
+        "bytes": [
+          32,
+          100,
+          101
+        ]
+      },
+      {
+        "token": " del",
+        "logprob": -1.5367997884750366,
+        "bytes": [
+          32,
+          100,
+          101,
+          108
+        ]
+      },
+      {
+        "token": "\".",
+        "logprob": -3.031501293182373,
+        "bytes": [
+          34,
+          46
+        ]
+      },
+      {
+        "token": "\"",
+        "logprob": -3.4465670585632324,
+        "bytes": [
+          34
+        ]
+      },
+      {
+        "token": " Ro",
+        "logprob": -3.553358554840088,
+        "bytes": [
+          32,
+          82,
+          111
+        ]
+      },
+      {
+        "token": " Negro",
+        "logprob": -4.1108880043029785,
+        "bytes": [
+          32,
+          78,
+          101,
+          103,
+          114,
+          111
+        ]
+      },
+      {
+        "token": "\",",
+        "logprob": -4.218660831451416,
+        "bytes": [
+          34,
+          44
+        ]
+      },
+      {
+        "token": " Azul",
+        "logprob": -4.508370876312256,
+        "bytes": [
+          32,
+          65,
+          122,
+          117,
+          108
+        ]
+      },
+      {
+        "token": " que",
+        "logprob": -4.633830547332764,
+        "bytes": [
+          32,
+          113,
+          117,
+          101
+        ]
+      },
+      {
+        "token": " Fant",
+        "logprob": -4.875868320465088,
+        "bytes": [
+          32,
+          70,
+          97,
+          110,
+          116
+        ]
+      }
+    ]
+  },
+  "top_mass": 0.686660500295063
+}

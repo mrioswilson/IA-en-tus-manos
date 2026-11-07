@@ -1,0 +1,125 @@
+{
+  "label": "manual_step_8",
+  "model": "qwen3.5:2b-q4_K_M",
+  "temperature": 1,
+  "seed": 42,
+  "recorded_at": "2026-11-05T17:13:07.839791+00:00",
+  "platform": "Linux CPU; not Windows",
+  "elapsed_s": 1.735849638003856,
+  "response": " las Nubes\". El dragón era de las nubesamar\"Bud\". El mullor de \"Bud\"",
+  "logprobs_type": "list",
+  "load_duration_s": 0.000375741,
+  "eval_count": 24,
+  "eval_duration_s": 1.482006,
+  "first": {
+    "token": " las",
+    "logprob": -1.7319592237472534,
+    "bytes": [
+      32,
+      108,
+      97,
+      115
+    ],
+    "top_logprobs": [
+      {
+        "token": " la",
+        "logprob": -0.782798707485199,
+        "bytes": [
+          32,
+          108,
+          97
+        ]
+      },
+      {
+        "token": " las",
+        "logprob": -1.7319592237472534,
+        "bytes": [
+          32,
+          108,
+          97,
+          115
+        ]
+      },
+      {
+        "token": " los",
+        "logprob": -2.272566795349121,
+        "bytes": [
+          32,
+          108,
+          111,
+          115
+        ]
+      },
+      {
+        "token": " F",
+        "logprob": -4.3056840896606445,
+        "bytes": [
+          32,
+          70
+        ]
+      },
+      {
+        "token": " No",
+        "logprob": -4.539690017700195,
+        "bytes": [
+          32,
+          78,
+          111
+        ]
+      },
+      {
+        "token": " Hier",
+        "logprob": -4.574088096618652,
+        "bytes": [
+          32,
+          72,
+          105,
+          101,
+          114
+        ]
+      },
+      {
+        "token": " N",
+        "logprob": -5.129094123840332,
+        "bytes": [
+          32,
+          78
+        ]
+      },
+      {
+        "token": " Pied",
+        "logprob": -5.254781723022461,
+        "bytes": [
+          32,
+          80,
+          105,
+          101,
+          100
+        ]
+      },
+      {
+        "token": " Cristal",
+        "logprob": -5.276169776916504,
+        "bytes": [
+          32,
+          67,
+          114,
+          105,
+          115,
+          116,
+          97,
+          108
+        ]
+      },
+      {
+        "token": " P",
+        "logprob": -5.302275657653809,
+        "bytes": [
+          32,
+          80
+        ]
+      }
+    ]
+  },
+  "top_mass": 0.7928303096951906
+}

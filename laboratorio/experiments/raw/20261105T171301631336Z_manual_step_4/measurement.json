@@ -1,0 +1,96 @@
+{
+  "label": "manual_step_4",
+  "model": "qwen3.5:2b-q4_K_M",
+  "temperature": 1,
+  "seed": 42,
+  "recorded_at": "2026-11-05T17:13:01.631454+00:00",
+  "platform": "Linux CPU; not Windows",
+  "elapsed_s": 1.642189848003909,
+  "response": "Caos\". Los dragones son una de las bestias supervan necesarias para combi, ya que se destacan por",
+  "logprobs_type": "list",
+  "load_duration_s": 0.000531588,
+  "eval_count": 24,
+  "eval_duration_s": 1.434547,
+  "first": {
+    "token": "Ca",
+    "logprob": -5.86069917678833,
+    "bytes": [
+      67,
+      97
+    ],
+    "top_logprobs": [
+      {
+        "token": "El",
+        "logprob": -2.4392495155334473,
+        "bytes": [
+          69,
+          108
+        ]
+      },
+      {
+        "token": "P",
+        "logprob": -3.343071460723877,
+        "bytes": [
+          80
+        ]
+      },
+      {
+        "token": "G",
+        "logprob": -3.378180980682373,
+        "bytes": [
+          71
+        ]
+      },
+      {
+        "token": "L",
+        "logprob": -3.4028096199035645,
+        "bytes": [
+          76
+        ]
+      },
+      {
+        "token": "M",
+        "logprob": -3.435539722442627,
+        "bytes": [
+          77
+        ]
+      },
+      {
+        "token": "B",
+        "logprob": -3.506277561187744,
+        "bytes": [
+          66
+        ]
+      },
+      {
+        "token": "D",
+        "logprob": -3.5348334312438965,
+        "bytes": [
+          68
+        ]
+      },
+      {
+        "token": "C",
+        "logprob": -3.5947976112365723,
+        "bytes": [
+          67
+        ]
+      },
+      {
+        "token": "S",
+        "logprob": -3.615248203277588,
+        "bytes": [
+          83
+        ]
+      },
+      {
+        "token": "R",
+        "logprob": -3.6183245182037354,
+        "bytes": [
+          82
+        ]
+      }
+    ]
+  },
+  "top_mass": 0.36252777217696047
+}

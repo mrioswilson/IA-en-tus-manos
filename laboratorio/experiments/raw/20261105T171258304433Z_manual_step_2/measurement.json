@@ -1,0 +1,116 @@
+{
+  "label": "manual_step_2",
+  "model": "qwen3.5:2b-q4_K_M",
+  "temperature": 1,
+  "seed": 42,
+  "recorded_at": "2026-11-05T17:12:58.304550+00:00",
+  "platform": "Linux CPU; not Windows",
+  "elapsed_s": 1.6395034770248458,
+  "response": "aba Doro\nTablón de dock de 4背着\" zapatos de baja\"\nEl día 8 y",
+  "logprobs_type": "list",
+  "load_duration_s": 0.000493707,
+  "eval_count": 24,
+  "eval_duration_s": 1.450781,
+  "first": {
+    "token": "aba",
+    "logprob": -0.005862159188836813,
+    "bytes": [
+      97,
+      98,
+      97
+    ],
+    "top_logprobs": [
+      {
+        "token": "aba",
+        "logprob": -0.005862159188836813,
+        "bytes": [
+          97,
+          98,
+          97
+        ]
+      },
+      {
+        "token": "ara",
+        "logprob": -5.6089887619018555,
+        "bytes": [
+          97,
+          114,
+          97
+        ]
+      },
+      {
+        "token": "aban",
+        "logprob": -6.840057373046875,
+        "bytes": [
+          97,
+          98,
+          97,
+          110
+        ]
+      },
+      {
+        "token": "ava",
+        "logprob": -7.6740617752075195,
+        "bytes": [
+          97,
+          118,
+          97
+        ]
+      },
+      {
+        "token": "á",
+        "logprob": -9.010627746582031,
+        "bytes": [
+          195,
+          161
+        ]
+      },
+      {
+        "token": "ase",
+        "logprob": -9.302660942077637,
+        "bytes": [
+          97,
+          115,
+          101
+        ]
+      },
+      {
+        "token": "aron",
+        "logprob": -9.501051902770996,
+        "bytes": [
+          97,
+          114,
+          111,
+          110
+        ]
+      },
+      {
+        "token": "ait",
+        "logprob": -10.041962623596191,
+        "bytes": [
+          97,
+          105,
+          116
+        ]
+      },
+      {
+        "token": "ó",
+        "logprob": -10.218080520629883,
+        "bytes": [
+          195,
+          179
+        ]
+      },
+      {
+        "token": "ABA",
+        "logprob": -10.877957344055176,
+        "bytes": [
+          65,
+          66,
+          65
+        ]
+      }
+    ]
+  },
+  "top_mass": 0.9997414993227135
+}

@@ -1,0 +1,140 @@
+{
+  "label": "spanish_1",
+  "model": "qwen3.5:2b-q4_K_M",
+  "temperature": 1,
+  "seed": 42,
+  "recorded_at": "2026-11-05T17:12:43.444242+00:00",
+  "platform": "Linux CPU; not Windows",
+  "elapsed_s": 0.8003536050673574,
+  "response": " estrellas, pero hay algo que es más grande que",
+  "logprobs_type": "list",
+  "load_duration_s": 0.000559479,
+  "eval_count": 10,
+  "eval_duration_s": 0.56935,
+  "first": {
+    "token": " estrellas",
+    "logprob": -0.3022596538066864,
+    "bytes": [
+      32,
+      101,
+      115,
+      116,
+      114,
+      101,
+      108,
+      108,
+      97,
+      115
+    ],
+    "top_logprobs": [
+      {
+        "token": " estrellas",
+        "logprob": -0.3022596538066864,
+        "bytes": [
+          32,
+          101,
+          115,
+          116,
+          114,
+          101,
+          108,
+          108,
+          97,
+          115
+        ]
+      },
+      {
+        "token": " const",
+        "logprob": -3.2789785861968994,
+        "bytes": [
+          32,
+          99,
+          111,
+          110,
+          115,
+          116
+        ]
+      },
+      {
+        "token": " luces",
+        "logprob": -3.6846745014190674,
+        "bytes": [
+          32,
+          108,
+          117,
+          99,
+          101,
+          115
+        ]
+      },
+      {
+        "token": " gal",
+        "logprob": -4.176980018615723,
+        "bytes": [
+          32,
+          103,
+          97,
+          108
+        ]
+      },
+      {
+        "token": " est",
+        "logprob": -4.6500244140625,
+        "bytes": [
+          32,
+          101,
+          115,
+          116
+        ]
+      },
+      {
+        "token": " Est",
+        "logprob": -4.689914703369141,
+        "bytes": [
+          32,
+          69,
+          115,
+          116
+        ]
+      },
+      {
+        "token": " n",
+        "logprob": -4.893640518188477,
+        "bytes": [
+          32,
+          110
+        ]
+      },
+      {
+        "token": " ne",
+        "logprob": -4.9785614013671875,
+        "bytes": [
+          32,
+          110,
+          101
+        ]
+      },
+      {
+        "token": " com",
+        "logprob": -5.234186172485352,
+        "bytes": [
+          32,
+          99,
+          111,
+          109
+        ]
+      },
+      {
+        "token": " lun",
+        "logprob": -5.443698883056641,
+        "bytes": [
+          32,
+          108,
+          117,
+          110
+        ]
+      }
+    ]
+  },
+  "top_mass": 0.8600444624818936
+}

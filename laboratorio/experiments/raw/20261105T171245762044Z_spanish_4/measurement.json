@@ -1,0 +1,135 @@
+{
+  "label": "spanish_4",
+  "model": "qwen3.5:2b-q4_K_M",
+  "temperature": 1,
+  "seed": 42,
+  "recorded_at": "2026-11-05T17:12:45.762158+00:00",
+  "platform": "Linux CPU; not Windows",
+  "elapsed_s": 1.6783102659974247,
+  "response": " tenía un concepto más grande.\nLe impregné de buenos, malos y_every,\nLe impregné de",
+  "logprobs_type": "list",
+  "load_duration_s": 0.000423854,
+  "eval_count": 24,
+  "eval_duration_s": 1.466349,
+  "first": {
+    "token": " tenía",
+    "logprob": -2.4300780296325684,
+    "bytes": [
+      32,
+      116,
+      101,
+      110,
+      195,
+      173,
+      97
+    ],
+    "top_logprobs": [
+      {
+        "token": " se",
+        "logprob": -2.1750664710998535,
+        "bytes": [
+          32,
+          115,
+          101
+        ]
+      },
+      {
+        "token": " tenía",
+        "logprob": -2.4300780296325684,
+        "bytes": [
+          32,
+          116,
+          101,
+          110,
+          195,
+          173,
+          97
+        ]
+      },
+      {
+        "token": " no",
+        "logprob": -2.440371036529541,
+        "bytes": [
+          32,
+          110,
+          111
+        ]
+      },
+      {
+        "token": " quería",
+        "logprob": -2.5336976051330566,
+        "bytes": [
+          32,
+          113,
+          117,
+          101,
+          114,
+          195,
+          173,
+          97
+        ]
+      },
+      {
+        "token": " viv",
+        "logprob": -2.652212619781494,
+        "bytes": [
+          32,
+          118,
+          105,
+          118
+        ]
+      },
+      {
+        "token": " era",
+        "logprob": -3.046233654022217,
+        "bytes": [
+          32,
+          101,
+          114,
+          97
+        ]
+      },
+      {
+        "token": " había",
+        "logprob": -3.771843433380127,
+        "bytes": [
+          32,
+          104,
+          97,
+          98,
+          195,
+          173,
+          97
+        ]
+      },
+      {
+        "token": " estaba",
+        "logprob": -3.8022074699401855,
+        "bytes": [
+          32,
+          101,
+          115,
+          116,
+          97,
+          98,
+          97
+        ]
+      },
+      {
+        "token": ",",
+        "logprob": -4.224847316741943,
+        "bytes": [
+          44
+        ]
+      },
+      {
+        "token": "\n",
+        "logprob": -4.367081165313721,
+        "bytes": [
+          10
+        ]
+      }
+    ]
+  },
+  "top_mass": 0.5588036325392843
+}
